@@ -5,34 +5,49 @@ import Image from "next/image"
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=600&auto=format&fit=crop",
-    alt: "Corte moderno masculino",
+    src: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=600&auto=format&fit=crop",
+    alt: "Nosso Estúdio",
     span: "col-span-2 row-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600&auto=format&fit=crop",
-    alt: "Barbeiro fazendo corte",
+    alt: "Corte Profissional",
     span: "col-span-1 row-span-1",
   },
   {
     src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=600&auto=format&fit=crop",
-    alt: "Barba bem feita",
+    alt: "Barba Perfeita",
     span: "col-span-1 row-span-1",
   },
   {
     src: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=600&auto=format&fit=crop",
-    alt: "Interior da barbearia",
+    alt: "Ambiente Premium",
     span: "col-span-1 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1587776354726-5a0ead6d1ed5?q=80&w=600&auto=format&fit=crop",
-    alt: "Ferramentas de barbeiro",
+    src: "https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=600&auto=format&fit=crop",
+    alt: "Ferramentas Profissionais",
+    span: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1621607512214-68297480165e?q=80&w=600&auto=format&fit=crop",
+    alt: "Detalhes do Estúdio",
+    span: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=600&auto=format&fit=crop",
+    alt: "Corte Moderno",
     span: "col-span-1 row-span-1",
   },
   {
     src: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=600&auto=format&fit=crop",
-    alt: "Estilo clássico",
+    alt: "Estilo Clássico",
     span: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1587776354726-5a0ead6d1ed5?q=80&w=600&auto=format&fit=crop",
+    alt: "Navalha Profissional",
+    span: "col-span-2 row-span-1",
   },
 ]
 

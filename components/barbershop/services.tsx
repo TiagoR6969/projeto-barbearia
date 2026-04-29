@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Scissors, Sparkles, Crown, Flame } from "lucide-react"
+import { Scissors, Star, Award, Zap } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
@@ -13,21 +13,21 @@ const services = [
     duration: "45 min",
   },
   {
-    icon: Crown,
+    icon: Award,
     name: "Corte Premium",
     description: "Corte personalizado com lavagem, massagem e finalização especial.",
     price: "R$ 90",
     duration: "60 min",
   },
   {
-    icon: Flame,
+    icon: Zap,
     name: "Barba Completa",
     description: "Modelagem e aparação da barba com toalha quente e hidratação.",
     price: "R$ 50",
     duration: "30 min",
   },
   {
-    icon: Sparkles,
+    icon: Star,
     name: "Combo Elite",
     description: "Corte premium + barba completa + tratamento capilar exclusivo.",
     price: "R$ 150",

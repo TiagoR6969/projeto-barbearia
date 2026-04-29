@@ -2,12 +2,13 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Calendar as CalendarIcon, Clock, User, Scissors, Check, RotateCcw, MessageCircle } from "lucide-react"
+import { Calendar as CalendarIcon, Clock, Scissors, Check, RotateCcw, MessageCircle, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Calendar } from "@/components/ui/calendar"
+import Image from "next/image"
 
 const services = [
   { id: "classico", name: "Corte Clássico", price: "R$ 60" },
@@ -17,9 +18,21 @@ const services = [
 ]
 
 const barbers = [
-  { id: "joao", name: "João Silva" },
-  { id: "pedro", name: "Pedro Santos" },
-  { id: "marcos", name: "Marcos Oliveira" },
+  { 
+    id: "joao", 
+    name: "João Silva",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+  },
+  { 
+    id: "pedro", 
+    name: "Pedro Santos",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+  },
+  { 
+    id: "marcos", 
+    name: "Marcos Oliveira",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
+  },
 ]
 
 const timeSlots = [
@@ -315,8 +328,14 @@ Aguardo a confirmação. Obrigado!`
                             : "border-border hover:border-primary/50"
                         }`}
                       >
-                        <div className="w-16 h-16 rounded-full bg-secondary mx-auto mb-3 flex items-center justify-center">
-                          <User className="h-8 w-8 text-muted-foreground" />
+                        <div className="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden relative">
+                          <Image
+                            src={barber.image}
+                            alt={barber.name}
+                            fill
+                            className="object-cover"
+                            sizes="80px"
+                          />
                         </div>
                         <p className="font-semibold text-foreground">{barber.name}</p>
                       </button>
